@@ -26,7 +26,7 @@ public class Page_GoogleHomepage extends Page_BasePage {
 
 	public void launchBrowserWithFirefox(){
 		FirefoxOptions firefoxDockerOptions = new FirefoxOptions();
-		System.setProperty("webdriver.gecko.driver","/bin/geckodriver");
+		System.setProperty("webdriver.gecko.driver","app/bin/geckodriver");
 		firefoxDockerOptions.addArguments("--headless");
 		firefoxDockerOptions.addArguments("--no-sandbox");
 		System.setProperty("webdriver.gecko.args", "--disable-logging");
